@@ -181,7 +181,7 @@ The core function of this app is to run 5 analytical queries that highlight barr
 ## 👥 Team Members
 
 Emilio Villar
-
+Alejandra Flores
 
 ## 9. 📅 Weekly Goals & Timeline
 
