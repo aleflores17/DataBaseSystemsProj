@@ -97,5 +97,12 @@ with col2:
             st.rerun() # Refresh the page
 
 # --- WEEK 3: Analytical Queries (Stubbed out) ---
-st.header("Analytical Queries (Week 3)")
-st.write("This is where your 5 analytical queries will go.")
+st.header("🏠 Analytical Query: Top 10 Eviction Leaders")
+
+if st.button("Show Top 10 Counties by Eviction Filings"):
+    data = db.get_top10_eviction_leaders()
+    if data:
+        df = pd.DataFrame(data, columns=["County", "State", "Eviction Filings"])
+        st.dataframe(df, use_container_width=True)
+    else:
+        st.warning("No data found.")
